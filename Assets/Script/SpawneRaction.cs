@@ -5,70 +5,63 @@ using UnityEngine;
 
 public class SpawneRaction : MonoBehaviour
 {
-    public float larguraw = 10;
-    public float alturah = 5;
-    public GameObject pianotile;
-    public float delay = 0.5f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        Spawner();
-        spawnuntill();
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(transform.position, new Vector3(larguraw, alturah, 0));
-    }
+   
+    public List<GameObject> Notas;
+    public float tempo = 0;
 
-    // Update is called once per frame
     void Update()
     {
-        if (verificacaoVazio())
+        QuedaRandomizada();
+
+
+    }
+
+
+    void QuedaSimples()
+    {
+        tempo += Time.deltaTime;
+        if (tempo > 0.5f)
         {
-            spawnuntill();
+            tempo = 0;
+            //RandomizarPosição
+            float posX = Random.Range(-2, 2);
+            Vector3 novaPos = new Vector3(posX, 6, 0);
+            //Randomizar o Objeto
+            int indice = Random.Range(0, Notas.Count);
+            GameObject novaNota = Instantiate(Notas[indice], novaPos, Quaternion.identity);
+            Destroy(novaNota, 2f);
         }
     }
-    void spawnuntill()
+
+    void QuedaRandomizada()
     {
-        Transform position = freeposition();
-        if (position)
+        tempo += Time.deltaTime;
+        if (tempo > 0.5f)
         {
-            GameObject piano = Instantiate(pianotile, position.transform.position, Quaternion.identity);
-            piano.transform.parent = position;
-        }
-        if (freeposition())
-        {
-            Invoke("spawnuntill",delay);
-        }
-    }
-    void Spawner()
-    {
-        foreach(Transform child in transform)
-        {
-            GameObject piano = Instantiate(pianotile, child.position, Quaternion.identity);
-            piano.transform.parent = child;
-        }
-    }
-    bool verificacaoVazio()
-    {
-        foreach (Transform child in transform)
-        {
-            if(child.childCount > 0)
+            tempo = 0;
+            //RandomizarPosição
+            float posX = Random.Range(-2, 2);
+            Vector3 novaPos = new Vector3(posX, 6, 0);
+            //Randomizar o Objeto
+            int probabilidade = Random.Range(0, 100);
+            if (probabilidade < 12)
             {
-                return false;
-            }
-        }
-        return true;
-    }
-    Transform freeposition()
-    {
-        foreach (Transform child in transform)
-        {
-            if (child.childCount == 0)
+                GameObject novaNota = Instantiate(Notas[0], novaPos, Quaternion.identity);
+                Destroy(novaNota, 2f);
+            }else if (probabilidade < 24)
             {
-                return child;
+                GameObject novaNota = Instantiate(Notas[1], novaPos, Quaternion.identity);
+                Destroy(novaNota, 2f);
             }
+            else if (probabilidade < 36)
+            {
+                GameObject novaNota = Instantiate(Notas[2], novaPos, Quaternion.identity);
+                Destroy(novaNota,  2f);
+            }
+
+
+
+
         }
-        return null;
     }
 }

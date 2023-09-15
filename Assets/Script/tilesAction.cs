@@ -5,6 +5,7 @@ using UnityEngine;
 public class tilesAction : MonoBehaviour
 {
     public SpriteRenderer color;
+    public int ValorDaPontuçao = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,11 @@ public class tilesAction : MonoBehaviour
     }
     void OnMouseOver()
     {
-        if(Input.GetMouseButtonDown(0))
-        color.color = Color.red;
+        if (Input.GetMouseButtonDown(0))
+        {
+            color.color = Color.red;
+            FindObjectOfType<Score>().PontosUpadate(ValorDaPontuçao);
+        }
     }
     void OnCollisionEnter2D(Collision2D colisao)
     {

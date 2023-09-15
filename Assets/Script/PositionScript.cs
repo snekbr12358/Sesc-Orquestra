@@ -15,6 +15,7 @@ public class PositionScript : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position,new Vector3(larguraw,alturah,0));
+
     }
 
     // Update is called once per frame
