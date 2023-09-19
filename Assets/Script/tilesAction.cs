@@ -17,7 +17,7 @@ public class tilesAction : MonoBehaviour
     {
         
     }
-    void OnMouseOver()
+    void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -27,7 +27,7 @@ public class tilesAction : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D colisao)
     {
-        if(color.color == Color.red)
+        if (color.color == Color.red)
         {
             Debug.Log("Você Acertou");
         }
@@ -36,4 +36,5 @@ public class tilesAction : MonoBehaviour
             Debug.Log("Você Errou");
         }
     }
+
 }

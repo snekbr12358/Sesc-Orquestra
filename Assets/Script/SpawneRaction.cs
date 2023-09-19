@@ -42,7 +42,7 @@ public class SpawneRaction : MonoBehaviour
     void QuedaRandomizada()
     {
         tempo += Time.deltaTime;
-        if (tempo > 0.5f)
+        if (tempo > 1)
         {
             tempo = 0;
             //RandomizarPosição
