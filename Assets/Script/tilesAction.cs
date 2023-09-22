@@ -21,8 +21,8 @@ public class tilesAction : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            color.color = Color.red;
             FindObjectOfType<Score>().PontosUpadate(ValorDaPontuçao);
+            Destroy(this.gameObject);
         }
     }
     void OnCollisionEnter2D(Collision2D colisao)
