@@ -12,6 +12,6 @@ public class Score : MonoBehaviour
     public void PontosUpadate(int pontos)
     {
         scorepoints += pontos;
-        meutext.text = scorepoints.ToString("0");  
+        meutext.text = scorepoints.ToString("Pontos: 0");  
     }
 }
