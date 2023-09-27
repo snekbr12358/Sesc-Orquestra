@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &26957668
 Transform:
   m_ObjectHideFlags: 0
@@ -312,6 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilesVelocidade: 0
+  vida: 10
 --- !u!1 &152309366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,7 +2872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11291c224e9da654da2ca20d184eb4d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilesVelocidade: 5
+  tilesVelocidade: 3
+  vida: 10
 --- !u!1 &1786013927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,7 +3701,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0
+  m_text: '3
+
 
 '
   m_isRightToLeft: 0

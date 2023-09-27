@@ -35,4 +35,17 @@ public class Gerenciador : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
+    //Vida
+    public int vida = 10;
+
+    //Dano
+
+    //Verificar dano
+    private void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if(colisao.gameObject.tag == "inimigo")
+        {
+            vida--;
+        }
+    }
 }

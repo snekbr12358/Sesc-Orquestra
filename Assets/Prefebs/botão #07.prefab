@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2154827060523051098}
   m_Layer: 0
   m_Name: "bot\xE3o #07"
-  m_TagString: Untagged
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
