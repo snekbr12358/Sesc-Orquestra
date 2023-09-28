@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class tilesAction : MonoBehaviour
 {
-
+    [SerializeField] private Sprite VerdeCerto;
 
     public int dano = 1;
     public SpriteRenderer color;
@@ -12,6 +12,7 @@ public class tilesAction : MonoBehaviour
     float velocidade;
     Rigidbody2D rb;
     Gerenciador gj;
+
 
 
 
@@ -38,6 +39,7 @@ public class tilesAction : MonoBehaviour
             string tag = gameObject.tag;
             if (tag == "vermelha")
             {
+                gj.Morreu();
                 gj.PerderVida(dano);
             }
             else if (tag == "verde") 

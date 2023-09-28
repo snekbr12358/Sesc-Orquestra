@@ -10,7 +10,7 @@ public class SpawneRaction : MonoBehaviour
     public float larguraw = 10;
     public float alturah = 5;
     public List<GameObject> Notas;
-    public float tempo = 0;
+    public float tempo = 1;
     public float velocidade;
 
     void Update()

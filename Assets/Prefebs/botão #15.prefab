@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094d976dc456fce4ea7a87a8df1f3d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VerdeCerto: {fileID: 21300000, guid: 3af4e64bfc55b584ead1a36ffac7f2a7, type: 3}
   dano: 1
   color: {fileID: 6447134493185815947}
   "ValorDaPontu\xE7ao": 1
