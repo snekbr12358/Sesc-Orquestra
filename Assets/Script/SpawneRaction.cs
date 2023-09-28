@@ -70,42 +70,42 @@ public class SpawneRaction : MonoBehaviour
             }
             else if (probabilidade < 48)
             {
-                GameObject novaBolinha = Instantiate(Notas[3], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[3], novaPos, Quaternion.identity);
                
             }
             else if (probabilidade < 55)
             {
-                GameObject novaBolinha = Instantiate(Notas[4], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[4], novaPos, Quaternion.identity);
                 
             }
             else if (probabilidade < 75)
             {
-                GameObject novaBolinha = Instantiate(Notas[5], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[5], novaPos, Quaternion.identity);
                 
             }
             else if (probabilidade < 85)
             {
-                GameObject novaBolinha = Instantiate(Notas[6], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[6], novaPos, Quaternion.identity);
                 
             }
             else if (probabilidade < 90)
             {
-                GameObject novaBolinha = Instantiate(Notas[7], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[7], novaPos, Quaternion.identity);
                 
             }
             else if(probabilidade < 95)
             {
-                GameObject novaBolinha = Instantiate(Notas[8], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[8], novaPos, Quaternion.identity);
                 
             }
             else if (probabilidade < 100)
             {
-                GameObject novaBolinha = Instantiate(Notas[9], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[9], novaPos, Quaternion.identity);
                 
             }
             else if (probabilidade < 105)
             {
-                GameObject novaBolinha = Instantiate(Notas[10], novaPos, Quaternion.identity);
+                GameObject novaNota = Instantiate(Notas[10], novaPos, Quaternion.identity);
                 
             }
             

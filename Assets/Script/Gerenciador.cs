@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Gerenciador : MonoBehaviour
 {
+    public TextMeshProUGUI txtvida;
+
+    public int vidaInicial = 3; 
+    private int vida;
 
     public float tilesVelocidade;
+
+    public Score score;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        vida = vidaInicial;
         Pause();
     }
 
@@ -35,17 +44,16 @@ public class Gerenciador : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
-    //Vida
-    public int vida = 10;
-
-    //Dano
-
-    //Verificar dano
-    private void OnCollisionEnter2D(Collision2D colisao)
+    public void PerderVida(int quantidade)
     {
-        if(colisao.gameObject.tag == "inimigo")
-        {
-            vida--;
-        }
+        vida -= quantidade;
+        txtvida.text = vida.ToString();
     }
+    public void SairJogo()
+    {
+        Debug.Log("Sair do Jogo");
+        Application.Quit();
+    }
+
+   
 }

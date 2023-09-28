@@ -6,6 +6,8 @@ TagManager:
   tags:
   - borda
   - inimigo
+  - vermelha
+  - verde
   layers:
   - Default
   - TransparentFX
