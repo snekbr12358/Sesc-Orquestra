@@ -51,7 +51,7 @@ public class Gerenciador : MonoBehaviour
     {
         if(vida <= 0) 
         { 
-          
+          Time.timeScale = 0;
           GamerOver.SetActive(true);
         }
         
