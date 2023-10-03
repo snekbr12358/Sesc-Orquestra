@@ -39,7 +39,6 @@ public class tilesAction : MonoBehaviour
             string tag = gameObject.tag;
             if (tag == "vermelha")
             {
-                gj.Morreu();
                 gj.PerderVida(dano);
             }
             else if (tag == "verde") 

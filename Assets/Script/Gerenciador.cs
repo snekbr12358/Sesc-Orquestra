@@ -7,6 +7,8 @@ using TMPro;
 
 public class Gerenciador : MonoBehaviour
 {
+    public AudioSource audioSource;
+
     public TextMeshProUGUI txtvida;
 
     public int vidaInicial = 3; 
@@ -47,15 +49,6 @@ public class Gerenciador : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
-    public void Morreu()
-    {
-        if(vida <= 0) 
-        { 
-          Time.timeScale = 0;
-          GamerOver.SetActive(true);
-        }
-        
-    }
     
     public void SairJogo()
     {
@@ -65,7 +58,23 @@ public class Gerenciador : MonoBehaviour
     public void PerderVida(int quantidade)
     {
         vida -= quantidade;
-        txtvida.text = vida.ToString();
+        txtvida.text = vida.ToString(); 
+        if(vida <= 0) 
+        {
+            audioSource.Stop();
+          Time.timeScale = 0f;
+          GamerOver.SetActive(true);
+        }
     }
-   
+    public void tocarmusica()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
+        }
+    }
 }
