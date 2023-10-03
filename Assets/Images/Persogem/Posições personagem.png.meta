@@ -132,12 +132,12 @@ TextureImporter:
       name: "Posi\xE7\xF5es personagem_2"
       rect:
         serializedVersion: 2
-        x: 2820
-        y: 3
-        width: 768
-        height: 1278
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2796
+        y: 0
+        width: 1398
+        height: 1281
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: "Posi\xE7\xF5es personagem_4"
       rect:
         serializedVersion: 2
-        x: 5911
-        y: 31
-        width: 833
-        height: 1250
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5592
+        y: 0
+        width: 1398
+        height: 1281
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: "Posi\xE7\xF5es personagem_5"
       rect:
         serializedVersion: 2
-        x: 8861
+        x: 6990
         y: 0
-        width: 925
+        width: 1398
         height: 1281
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: "Posi\xE7\xF5es personagem_6"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 841
-        height: 1138
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8388
+        y: 0
+        width: 1398
+        height: 1281
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,64 +213,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_11"
+      name: "Posi\xE7\xF5es personagem_0"
       rect:
         serializedVersion: 2
-        x: 4268
-        y: 26
-        width: 1172
-        height: 1176
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1398
+        height: 1281
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab7fc619c3b86eb4891cba5d5a24fc0f
-      internalID: -273093325
+      spriteID: 57a882f1cb94a77439bb559135a04c69
+      internalID: -1970598909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_14"
+      name: "Posi\xE7\xF5es personagem_1"
       rect:
         serializedVersion: 2
-        x: 1489
-        y: 29
-        width: 821
-        height: 1205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1398
+        y: 0
+        width: 1398
+        height: 1281
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 959901995e8762b4b959812fac327de4
-      internalID: 50085877
+      spriteID: 10e758a862dd68843badd868ccdc0491
+      internalID: 1954500118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_24"
+      name: "Posi\xE7\xF5es personagem_3"
       rect:
         serializedVersion: 2
-        x: 7050
-        y: 33
-        width: 942
-        height: 1059
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4194
+        y: 0
+        width: 1398
+        height: 1281
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60a3e6027e778d548a7178b2f87d4d70
-      internalID: 39420310
+      spriteID: ff83ea627e9bb6f4f94392aa5420e601
+      internalID: -674973371
       vertices: []
       indices: 
       edges: []
@@ -288,56 +288,11 @@ TextureImporter:
     nameFileIdTable:
       "Posi\xE7\xF5es personagem_0": -1970598909
       "Posi\xE7\xF5es personagem_1": 1954500118
-      "Posi\xE7\xF5es personagem_10": -1656692674
-      "Posi\xE7\xF5es personagem_11": -273093325
-      "Posi\xE7\xF5es personagem_12": 165866320
-      "Posi\xE7\xF5es personagem_13": -122023797
-      "Posi\xE7\xF5es personagem_14": 50085877
-      "Posi\xE7\xF5es personagem_15": 1444126701
-      "Posi\xE7\xF5es personagem_16": -133805188
-      "Posi\xE7\xF5es personagem_17": 759166527
-      "Posi\xE7\xF5es personagem_18": -362462219
-      "Posi\xE7\xF5es personagem_19": 485528197
       "Posi\xE7\xF5es personagem_2": -735451839
-      "Posi\xE7\xF5es personagem_20": -2039946511
-      "Posi\xE7\xF5es personagem_21": 388036086
-      "Posi\xE7\xF5es personagem_22": -1661532661
-      "Posi\xE7\xF5es personagem_23": 1005398551
-      "Posi\xE7\xF5es personagem_24": 39420310
-      "Posi\xE7\xF5es personagem_25": 592247613
-      "Posi\xE7\xF5es personagem_26": 117205767
-      "Posi\xE7\xF5es personagem_27": 754273234
-      "Posi\xE7\xF5es personagem_28": 1818227410
-      "Posi\xE7\xF5es personagem_29": 5424732
       "Posi\xE7\xF5es personagem_3": -674973371
-      "Posi\xE7\xF5es personagem_30": -10369306
-      "Posi\xE7\xF5es personagem_31": -541185843
-      "Posi\xE7\xF5es personagem_32": 1577993555
-      "Posi\xE7\xF5es personagem_33": -817051611
-      "Posi\xE7\xF5es personagem_34": 1439611722
-      "Posi\xE7\xF5es personagem_35": -1974116184
-      "Posi\xE7\xF5es personagem_36": 1277263863
-      "Posi\xE7\xF5es personagem_37": -536839638
-      "Posi\xE7\xF5es personagem_38": -487278854
-      "Posi\xE7\xF5es personagem_39": -1358377557
       "Posi\xE7\xF5es personagem_4": -2052412960
-      "Posi\xE7\xF5es personagem_40": 73541013
-      "Posi\xE7\xF5es personagem_41": 410385180
-      "Posi\xE7\xF5es personagem_42": 1986275602
-      "Posi\xE7\xF5es personagem_43": -406439823
-      "Posi\xE7\xF5es personagem_44": 165550219
-      "Posi\xE7\xF5es personagem_45": -309368234
-      "Posi\xE7\xF5es personagem_46": -977160973
-      "Posi\xE7\xF5es personagem_47": 819040709
-      "Posi\xE7\xF5es personagem_48": -416986455
-      "Posi\xE7\xF5es personagem_49": 1707881793
       "Posi\xE7\xF5es personagem_5": -1953944973
-      "Posi\xE7\xF5es personagem_50": 2110574506
-      "Posi\xE7\xF5es personagem_51": 563428218
       "Posi\xE7\xF5es personagem_6": 904189645
-      "Posi\xE7\xF5es personagem_7": 1616042721
-      "Posi\xE7\xF5es personagem_8": 72952596
-      "Posi\xE7\xF5es personagem_9": -835911033
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

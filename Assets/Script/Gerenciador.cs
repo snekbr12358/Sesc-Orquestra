@@ -20,10 +20,14 @@ public class Gerenciador : MonoBehaviour
 
     public GameObject GamerOver;
 
+ 
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        
         vida = vidaInicial;
         Pause();
     }
@@ -61,9 +65,10 @@ public class Gerenciador : MonoBehaviour
         txtvida.text = vida.ToString(); 
         if(vida <= 0) 
         {
-            audioSource.Stop();
+          audioSource.Stop();
           Time.timeScale = 0f;
           GamerOver.SetActive(true);
+          
         }
     }
     public void tocarmusica()
@@ -74,7 +79,8 @@ public class Gerenciador : MonoBehaviour
         }
         else
         {
-            Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
+          Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
         }
     }
+   
 }

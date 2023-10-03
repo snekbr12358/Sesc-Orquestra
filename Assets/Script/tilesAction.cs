@@ -13,12 +13,14 @@ public class tilesAction : MonoBehaviour
     Rigidbody2D rb;
     Gerenciador gj;
 
+    Animator animator;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         gj = FindAnyObjectByType<Gerenciador>();
         velocidade = gj.tilesVelocidade;
@@ -39,6 +41,7 @@ public class tilesAction : MonoBehaviour
             string tag = gameObject.tag;
             if (tag == "vermelha")
             {
+                animator.SetBool("die", true);
                 gj.PerderVida(dano);
             }
             else if (tag == "verde") 
