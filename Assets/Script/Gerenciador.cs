@@ -20,16 +20,14 @@ public class Gerenciador : MonoBehaviour
 
     public GameObject GamerOver;
 
-    private Banco MeuBnaco;
+ 
 
-    Gerenciador gj;
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        gj = FindAnyObjectByType<Gerenciador>();
-        MeuBnaco = GetComponent<Banco>();
+        
         vida = vidaInicial;
         Pause();
     }
@@ -81,11 +79,8 @@ public class Gerenciador : MonoBehaviour
         }
         else
         {
-            Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
+          Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
         }
     }
-    public void ReceberMoedasdaMorreu(int n_moedas)
-    {
-
-    }
+   
 }
