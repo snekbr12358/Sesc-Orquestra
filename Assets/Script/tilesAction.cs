@@ -6,6 +6,8 @@ public class tilesAction : MonoBehaviour
 {
     [SerializeField] private Sprite VerdeCerto;
 
+
+    bool clicado = false;
     public int dano = 1;
     public SpriteRenderer color;
     public int ValorDaPontuçao = 1;
@@ -36,8 +38,9 @@ public class tilesAction : MonoBehaviour
     {
         
 
-        if (gj != null)
+        if (gj != null && !clicado)
         {
+            clicado = true;
             string tag = gameObject.tag;
             if (tag == "vermelha")
             {
@@ -46,10 +49,14 @@ public class tilesAction : MonoBehaviour
             }
             else if (tag == "verde") 
             {
+                animator.SetBool("die", true);
                 gj.score.PontosUpadate(1);
             }
             
         }        
-        Destroy(gameObject);
+        Destroy(gameObject, 0.5f);
     }
+
+
+
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4cb6d38b74a9e3849918e74a2f3ee140
+guid: 9740f18e3159533418e22643e44643f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_0"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ba22df314f95f94b9217646ffe27cdd
-      internalID: 1742408400
+      spriteID: deafc62976c288d43b6cd765eab6410a
+      internalID: 2072952911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_1"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_1"
       rect:
         serializedVersion: 2
-        x: 1623
+        x: 1669
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71d4924c41298d448b99abd2ee726d85
-      internalID: -1705179807
+      spriteID: 6d7ead712ad6cf04f831ed3b769a9477
+      internalID: -884501760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_2"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_2"
       rect:
         serializedVersion: 2
-        x: 3246
+        x: 3338
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 286baad84bbe71b49bd33e5f1119d27f
-      internalID: -1732884046
+      spriteID: 206044fa3cf11dd4684c9a64530a2a39
+      internalID: 788414098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_3"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_3"
       rect:
         serializedVersion: 2
-        x: 4869
+        x: 5007
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0804f35b23665a4688dabfec9d69117
-      internalID: -663494549
+      spriteID: 1c84d9297299f3e4c80705b322777200
+      internalID: -1718093772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_4"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_4"
       rect:
         serializedVersion: 2
-        x: 6492
+        x: 6676
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac92822f9ff86cc449717cec2010aa53
-      internalID: 595905517
+      spriteID: 56b6d84ba8aea354a8cfcaa7534124f5
+      internalID: 1827529812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_5"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_5"
       rect:
         serializedVersion: 2
-        x: 8115
+        x: 8345
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8095d54888fe0d646962fbc4a9c89f4a
-      internalID: 843298020
+      spriteID: 458ca800c2b4c4d488b7293e4d154a21
+      internalID: 1309690644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Posi\xE7\xF5es personagem_6"
+      name: "posi\xE7\xF5es personagens_Prancheta 1_6"
       rect:
         serializedVersion: 2
-        x: 9738
+        x: 10014
         y: 0
-        width: 1623.1428
-        height: 1254
+        width: 1669
+        height: 1645
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7db92efdf6a4ed4cae7dca6f6188ab4
-      internalID: -971458799
+      spriteID: 121f03dd3a887e1458c851c77e0e1205
+      internalID: 338283888
       vertices: []
       indices: 
       edges: []
@@ -286,13 +286,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Posi\xE7\xF5es personagem_0": 1742408400
-      "Posi\xE7\xF5es personagem_1": -1705179807
-      "Posi\xE7\xF5es personagem_2": -1732884046
-      "Posi\xE7\xF5es personagem_3": -663494549
-      "Posi\xE7\xF5es personagem_4": 595905517
-      "Posi\xE7\xF5es personagem_5": 843298020
-      "Posi\xE7\xF5es personagem_6": -971458799
+      "posi\xE7\xF5es personagens_Prancheta 1_0": 2072952911
+      "posi\xE7\xF5es personagens_Prancheta 1_1": -884501760
+      "posi\xE7\xF5es personagens_Prancheta 1_2": 788414098
+      "posi\xE7\xF5es personagens_Prancheta 1_3": -1718093772
+      "posi\xE7\xF5es personagens_Prancheta 1_4": 1827529812
+      "posi\xE7\xF5es personagens_Prancheta 1_5": 1309690644
+      "posi\xE7\xF5es personagens_Prancheta 1_6": 338283888
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

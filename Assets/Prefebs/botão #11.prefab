@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6731305435587680441}
   - component: {fileID: 6731305435587680442}
   - component: {fileID: 6731305435587680443}
+  - component: {fileID: 500875528989277024}
   m_Layer: 0
   m_Name: "bot\xE3o #11"
   m_TagString: verde
@@ -136,6 +137,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094d976dc456fce4ea7a87a8df1f3d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VerdeCerto: {fileID: 0}
   dano: 1
   color: {fileID: 6731305435587680440}
   "ValorDaPontu\xE7ao": 1
+--- !u!95 &500875528989277024
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731305435587680436}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d39a95e1e1d48a447a18dfd769f3cfda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

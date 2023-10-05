@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 468650041141345077}
   - component: {fileID: 468650041141345078}
   - component: {fileID: 468650041141345079}
+  - component: {fileID: 2083284738}
   m_Layer: 0
   m_Name: "bot\xE3o #01"
   m_TagString: vermelha
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468650041141345096}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.330001, y: 11.320001, z: -0.061540596}
   m_LocalScale: {x: 0.1972605, y: 0.2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -136,6 +137,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094d976dc456fce4ea7a87a8df1f3d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VerdeCerto: {fileID: 0}
   dano: 1
   color: {fileID: 468650041141345076}
   "ValorDaPontu\xE7ao": 1
+--- !u!95 &2083284738
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468650041141345096}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 096a2742a9559f143a22c8d368d917df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
