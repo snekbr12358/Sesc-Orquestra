@@ -19,29 +19,35 @@ public class Gerenciador : MonoBehaviour
     public Score score;
 
     public GameObject GamerOver;
+    public GameObject TelaVitoria;
 
- 
-
-    
 
     // Start is called before the first frame update
     void Start()
     {
         
         vida = vidaInicial;
+        
         Pause();
+    }
+
+    void MusicaFim() 
+    {
+        audioSource.Stop();
+        Time.timeScale = 0f;
+        TelaVitoria.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void Play()
     {
         
         Time.timeScale = 1f;
-        
+        Invoke("MusicaFim", audioSource.clip.length);
     }
     public void Pause()
     {
