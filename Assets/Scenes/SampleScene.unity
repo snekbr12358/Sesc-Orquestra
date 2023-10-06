@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 1740190317}
   - component: {fileID: 1740190316}
   m_Layer: 0
-  m_Name: "posi\xE7\xF5es personagens_Prancheta 1_3"
+  m_Name: Persogem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
