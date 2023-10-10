@@ -7,6 +7,8 @@ using TMPro;
 
 public class Gerenciador : MonoBehaviour
 {
+    public SceneManager SceneManager;
+
     Banco banco;
 
     public AudioSource audioSource;
@@ -47,7 +49,7 @@ public class Gerenciador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     public void Play()
     {
@@ -96,9 +98,8 @@ public class Gerenciador : MonoBehaviour
           Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
         }
     }
-    public void salvarScore()
+    public void InciarGame()
     {
-
+        SceneManager.LoadScene(0);
     }
-   
 }
