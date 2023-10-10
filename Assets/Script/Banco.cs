@@ -5,6 +5,8 @@ using UnityEngine;
 public class Banco : MonoBehaviour
 {
     private int valorBanco;
+    private const string moedasKey = "minhasMoedas";
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,19 +19,23 @@ public class Banco : MonoBehaviour
     {
         
     }
+    
     public void GuardarDinheiro(int novoValor)
     {
         //recebo oq eu ja tenho
-        valorBanco = PlayerPrefs.GetInt("minhasMoedas");
+        valorBanco = PlayerPrefs.GetInt(moedasKey);
         //Soma um novo valor
         valorBanco = valorBanco + novoValor;
 
         //Guarda
-        PlayerPrefs.SetInt("minhasmoedas", novoValor);
+        PlayerPrefs.SetInt(moedasKey, valorBanco);
+
+        PlayerPrefs.Save();
     }
+
     public int InformarValorBanco()
     {
-        valorBanco = PlayerPrefs.GetInt("minhasMoedas");
+        valorBanco = PlayerPrefs.GetInt(moedasKey);
         return valorBanco;
     }
 }

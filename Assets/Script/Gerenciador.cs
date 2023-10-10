@@ -7,6 +7,8 @@ using TMPro;
 
 public class Gerenciador : MonoBehaviour
 {
+    Banco banco;
+
     public AudioSource audioSource;
 
     public TextMeshProUGUI txtvida;
@@ -21,11 +23,13 @@ public class Gerenciador : MonoBehaviour
     public GameObject GamerOver;
     public GameObject TelaVitoria;
 
+    private int pontostotais;
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {   
+        banco = GetComponent<Banco>();
+
         vida = vidaInicial;
         
         Pause();
@@ -36,6 +40,8 @@ public class Gerenciador : MonoBehaviour
         audioSource.Stop();
         Time.timeScale = 0f;
         TelaVitoria.SetActive(true);
+        score.MostrarScoreWin();
+        Debug.Log(banco.InformarValorBanco());
     }
 
     // Update is called once per frame
@@ -71,10 +77,12 @@ public class Gerenciador : MonoBehaviour
         txtvida.text = vida.ToString(); 
         if(vida <= 0) 
         {
-          audioSource.Stop();
-          Time.timeScale = 0f;
-          GamerOver.SetActive(true);
-          
+            audioSource.Stop();
+            Time.timeScale = 0f;
+            GamerOver.SetActive(true);
+            score.MostrarScoreGameOver();
+            banco.GuardarDinheiro(score.scorepoints);
+            Debug.Log(banco.InformarValorBanco());
         }
     }
     public void tocarmusica()
@@ -87,6 +95,10 @@ public class Gerenciador : MonoBehaviour
         {
           Debug.LogError("AudioSource não atribuído ao objeto do script de gerenciador.");
         }
+    }
+    public void salvarScore()
+    {
+
     }
    
 }
