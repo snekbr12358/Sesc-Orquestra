@@ -1550,6 +1550,8 @@ struct AudioSampleProvider_t602353124A2F6F2AEC38E56C3C21932344F712E2;
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // UnityEngine.EventSystems.AxisEventData
 struct AxisEventData_t4AA742BC101B1AA300B16EE7F19E31B91F37A938;
+// Banco
+struct Banco_tFFF9FB62BC33FB1C4AB90BA20D8748BC0B63410A;
 // UnityEngine.EventSystems.BaseEventData
 struct BaseEventData_tE03A848325C0AE8E76C6CA15FD86395EBF83364F;
 // UnityEngine.EventSystems.BaseInput
@@ -41001,6 +41003,8 @@ struct CircleCollider2D_t5D665D58EACA966EA4033BCF0EE91E198552E786  : public Coll
 // DestroyTiles
 struct DestroyTiles_t3600FE4DEAD16706639AD894A05FF1514504F587  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// Gerenciador DestroyTiles::gj
+	Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0* ___gj_4;
 };
 
 // UnityEngine.UIElements.DropdownField
@@ -41054,22 +41058,26 @@ struct EventTrigger_tAEBFB7A16CA99343EA87722F78884BF8646BAE1B  : public MonoBeha
 // Gerenciador
 struct Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// Banco Gerenciador::banco
+	Banco_tFFF9FB62BC33FB1C4AB90BA20D8748BC0B63410A* ___banco_4;
 	// UnityEngine.AudioSource Gerenciador::audioSource
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource_4;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource_5;
 	// TMPro.TextMeshProUGUI Gerenciador::txtvida
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___txtvida_5;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___txtvida_6;
 	// System.Int32 Gerenciador::vidaInicial
-	int32_t ___vidaInicial_6;
+	int32_t ___vidaInicial_7;
 	// System.Int32 Gerenciador::vida
-	int32_t ___vida_7;
+	int32_t ___vida_8;
 	// System.Single Gerenciador::tilesVelocidade
-	float ___tilesVelocidade_8;
+	float ___tilesVelocidade_9;
 	// Score Gerenciador::score
-	Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A* ___score_9;
+	Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A* ___score_10;
 	// UnityEngine.GameObject Gerenciador::GamerOver
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GamerOver_10;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GamerOver_11;
 	// UnityEngine.GameObject Gerenciador::TelaVitoria
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TelaVitoria_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TelaVitoria_12;
+	// System.Int32 Gerenciador::pontostotais
+	int32_t ___pontostotais_13;
 };
 
 // UnityEngine.UIElements.Label
@@ -41254,6 +41262,10 @@ struct Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A  : public MonoBehaviour_t
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___meutext_4;
 	// System.Int32 Score::scorepoints
 	int32_t ___scorepoints_5;
+	// TMPro.TMP_Text Score::TXTscoreGameOver
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___TXTscoreGameOver_6;
+	// TMPro.TMP_Text Score::TXTscoreWin
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___TXTscoreWin_7;
 };
 
 // TMPro.Examples.ShaderPropAnimator

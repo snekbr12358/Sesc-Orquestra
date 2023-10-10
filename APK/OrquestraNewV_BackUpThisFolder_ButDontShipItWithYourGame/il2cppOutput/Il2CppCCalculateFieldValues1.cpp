@@ -286,6 +286,8 @@ struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // UnityEngine.EventSystems.AxisEventData
 struct AxisEventData_t4AA742BC101B1AA300B16EE7F19E31B91F37A938;
+// Banco
+struct Banco_tFFF9FB62BC33FB1C4AB90BA20D8748BC0B63410A;
 // UnityEngine.EventSystems.BaseEventData
 struct BaseEventData_tE03A848325C0AE8E76C6CA15FD86395EBF83364F;
 // UnityEngine.EventSystems.BaseInput
@@ -6458,6 +6460,13 @@ struct ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15  : public MonoBe
 	Scrollbar_t7CDC9B956698D9385A11E4C12964CD51477072C3* ___ChatScrollbar_6;
 };
 
+// DestroyTiles
+struct DestroyTiles_t3600FE4DEAD16706639AD894A05FF1514504F587  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// Gerenciador DestroyTiles::gj
+	Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0* ___gj_4;
+};
+
 // DropdownSample
 struct DropdownSample_tCE5EBEBD2E880BDC4DF110CCD08388269E021100  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -6483,22 +6492,26 @@ struct EnvMapAnimator_tFBDB01D5863979E446E8FF4A3A9C1EA6933D38DB  : public MonoBe
 // Gerenciador
 struct Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// Banco Gerenciador::banco
+	Banco_tFFF9FB62BC33FB1C4AB90BA20D8748BC0B63410A* ___banco_4;
 	// UnityEngine.AudioSource Gerenciador::audioSource
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource_4;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource_5;
 	// TMPro.TextMeshProUGUI Gerenciador::txtvida
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___txtvida_5;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___txtvida_6;
 	// System.Int32 Gerenciador::vidaInicial
-	int32_t ___vidaInicial_6;
+	int32_t ___vidaInicial_7;
 	// System.Int32 Gerenciador::vida
-	int32_t ___vida_7;
+	int32_t ___vida_8;
 	// System.Single Gerenciador::tilesVelocidade
-	float ___tilesVelocidade_8;
+	float ___tilesVelocidade_9;
 	// Score Gerenciador::score
-	Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A* ___score_9;
+	Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A* ___score_10;
 	// UnityEngine.GameObject Gerenciador::GamerOver
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GamerOver_10;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GamerOver_11;
 	// UnityEngine.GameObject Gerenciador::TelaVitoria
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TelaVitoria_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___TelaVitoria_12;
+	// System.Int32 Gerenciador::pontostotais
+	int32_t ___pontostotais_13;
 };
 
 // TMPro.Examples.ObjectSpin
@@ -6542,6 +6555,10 @@ struct Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A  : public MonoBehaviour_t
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___meutext_4;
 	// System.Int32 Score::scorepoints
 	int32_t ___scorepoints_5;
+	// TMPro.TMP_Text Score::TXTscoreGameOver
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___TXTscoreGameOver_6;
+	// TMPro.TMP_Text Score::TXTscoreWin
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___TXTscoreWin_7;
 };
 
 // TMPro.Examples.ShaderPropAnimator
@@ -8916,6 +8933,10 @@ struct TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_StaticFields
 
 // ChatController
 
+// DestroyTiles
+
+// DestroyTiles
+
 // DropdownSample
 
 // DropdownSample
@@ -9614,18 +9635,21 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3245[15] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3246[2] = 
 {
 	static_cast<int32_t>(offsetof(GUILayoutOption_t8B0AA056521747053A3176FCC43E9C3608940A14, ___type_0)),static_cast<int32_t>(offsetof(GUILayoutOption_t8B0AA056521747053A3176FCC43E9C3608940A14, ___value_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3249[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3249[2] = 
 {
-	static_cast<int32_t>(offsetof(Banco_tFFF9FB62BC33FB1C4AB90BA20D8748BC0B63410A, ___valorBanco_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3251[8] = 
+	static_cast<int32_t>(offsetof(Banco_tFFF9FB62BC33FB1C4AB90BA20D8748BC0B63410A, ___valorBanco_4)),0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3250[1] = 
 {
-	static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___audioSource_4)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___txtvida_5)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___vidaInicial_6)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___vida_7)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___tilesVelocidade_8)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___score_9)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___GamerOver_10)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___TelaVitoria_11)),};
+	static_cast<int32_t>(offsetof(DestroyTiles_t3600FE4DEAD16706639AD894A05FF1514504F587, ___gj_4)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3251[10] = 
+{
+	static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___banco_4)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___audioSource_5)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___txtvida_6)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___vidaInicial_7)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___vida_8)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___tilesVelocidade_9)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___score_10)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___GamerOver_11)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___TelaVitoria_12)),static_cast<int32_t>(offsetof(Gerenciador_t935499518035E2549E962EEB60CFA7C31AF672D0, ___pontostotais_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3252[2] = 
 {
 	static_cast<int32_t>(offsetof(PositionScript_t793EEAAFC057BA433661455D12754C351DA16E70, ___larguraw_4)),static_cast<int32_t>(offsetof(PositionScript_t793EEAAFC057BA433661455D12754C351DA16E70, ___alturah_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3253[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3253[4] = 
 {
-	static_cast<int32_t>(offsetof(Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A, ___meutext_4)),static_cast<int32_t>(offsetof(Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A, ___scorepoints_5)),};
+	static_cast<int32_t>(offsetof(Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A, ___meutext_4)),static_cast<int32_t>(offsetof(Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A, ___scorepoints_5)),static_cast<int32_t>(offsetof(Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A, ___TXTscoreGameOver_6)),static_cast<int32_t>(offsetof(Score_t190877D354724EB1BD99FA27F906E19CB8F0C88A, ___TXTscoreWin_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3254[5] = 
 {
 	static_cast<int32_t>(offsetof(SpawneRaction_tFDB3723F18B935FFA75377437AF1BC2F9560603B, ___larguraw_4)),static_cast<int32_t>(offsetof(SpawneRaction_tFDB3723F18B935FFA75377437AF1BC2F9560603B, ___alturah_5)),static_cast<int32_t>(offsetof(SpawneRaction_tFDB3723F18B935FFA75377437AF1BC2F9560603B, ___Notas_6)),static_cast<int32_t>(offsetof(SpawneRaction_tFDB3723F18B935FFA75377437AF1BC2F9560603B, ___tempo_7)),static_cast<int32_t>(offsetof(SpawneRaction_tFDB3723F18B935FFA75377437AF1BC2F9560603B, ___velocidade_8)),};
