@@ -102,4 +102,16 @@ public class Gerenciador : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void TentarNovamente()
+    {
+        GamerOver.SetActive(false);
+        TelaVitoria.SetActive(false);
+        tocarmusica();
+        vida = vidaInicial;
+        txtvida.text = vida.ToString();
+        score.ResetarScore();
+        Play();
+    }
+
 }

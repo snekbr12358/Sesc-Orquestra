@@ -13,7 +13,10 @@ public class Score : MonoBehaviour
 
     public TMP_Text TXTscoreWin;
 
-
+    public void ResetarScore() {
+        scorepoints = 0;
+        meutext.text = scorepoints.ToString("0");
+    }
     public void PontosUpadate(int pontos)
     {
         scorepoints += pontos;
