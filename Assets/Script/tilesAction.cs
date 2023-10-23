@@ -8,11 +8,15 @@ public class tilesAction : MonoBehaviour
 
 
     bool clicado = false;
+
     public int dano = 1;
     public SpriteRenderer color;
     public int ValorDaPontuçao = 1;
+
     float velocidade;
+
     Rigidbody2D rb;
+
     Gerenciador gj;
 
     Animator animator;

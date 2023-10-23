@@ -15,9 +15,10 @@ public class Gerenciador : MonoBehaviour
 
     public TextMeshProUGUI txtvida;
 
-    public int vidaInicial = 3; 
-    public int vida;
-
+    private int vidaInicial = 3; 
+    private int vida;
+    private int vidasCompradas;
+    
     public float tilesVelocidade;
 
     public Score score;
@@ -29,10 +30,8 @@ public class Gerenciador : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         banco = GetComponent<Banco>();
-
-        vida = vidaInicial;
         
         Pause();
     }
@@ -53,7 +52,7 @@ public class Gerenciador : MonoBehaviour
     }
     public void Play()
     {
-        
+        Inicializar();
         Time.timeScale = 1f;
         Invoke("MusicaFim", audioSource.clip.length);
     }
@@ -113,5 +112,14 @@ public class Gerenciador : MonoBehaviour
         score.ResetarScore();
         Play();
     }
-
+    public void Inicializar()
+    {
+        int vidas_compradas = PlayerPrefs.GetInt("nivelVida");
+        vida = vida + vidas_compradas;
+        txtvida.text = vida.ToString();
+    }
+    public int InformaVida()
+    {
+        return vida;
+    }
 }
