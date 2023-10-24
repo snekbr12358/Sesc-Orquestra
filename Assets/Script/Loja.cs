@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Loja : MonoBehaviour
 {
+    
     //Variavel Texto de Valor de Coração
 
     public TextMeshProUGUI valorVida;
@@ -23,14 +24,17 @@ public class Loja : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //informaçao do nivel da vida
+        int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;        
+        int custo = (vidascompradas * 10);
+        valorVida.text = " Vida LV: " + vidascompradas.ToString() + "$: " + custo.ToString();
     }
     //Realizar Comprar
     public void ComprarVida()
     {
         int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;
         int custo = (vidascompradas * 10);
-        if (MeuBanco.Pagar(custo) == true)
+        if(MeuBanco.Pagar(custo) == true) 
         {
             //conseguiu compra
             PlayerPrefs.SetInt("nivelVida", vidascompradas);
