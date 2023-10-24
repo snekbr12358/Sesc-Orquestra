@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class Loja : MonoBehaviour
 {
-    
+
+    public TextMeshProUGUI valorScore;
+
     //Variavel Texto de Valor de Coração
 
     public TextMeshProUGUI valorVida;
@@ -19,6 +21,7 @@ public class Loja : MonoBehaviour
     void Start()
     {
       MeuBanco = GameObject.FindGameObjectWithTag("GameController").GetComponent<Banco>();
+      //PlayerPrefs.SetInt("nivelVida",0);
     }
 
     // Update is called once per frame
@@ -44,4 +47,14 @@ public class Loja : MonoBehaviour
             //não conseguiu comprar
         }
     }
+    public void ScoreLoja()
+    {
+        int score = PlayerPrefs.GetInt("nivelScore");
+        valorScore.text = score.ToString();
+        
+        
+    }
+
+
+
 }
