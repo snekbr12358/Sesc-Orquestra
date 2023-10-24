@@ -21,7 +21,6 @@ public class Loja : MonoBehaviour
     void Start()
     {
       MeuBanco = GameObject.FindGameObjectWithTag("GameController").GetComponent<Banco>();
-      //PlayerPrefs.SetInt("nivelVida",0);
     }
 
     // Update is called once per frame
@@ -31,6 +30,7 @@ public class Loja : MonoBehaviour
         int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;        
         int custo = (vidascompradas * 10);
         valorVida.text = " Vida LV: " + vidascompradas.ToString() + "$: " + custo.ToString();
+        ScoreLoja();
     }
     //Realizar Comprar
     public void ComprarVida()
@@ -49,9 +49,8 @@ public class Loja : MonoBehaviour
     }
     public void ScoreLoja()
     {
-        int score = PlayerPrefs.GetInt("nivelScore");
+        int score = PlayerPrefs.GetInt("minhasMoedas");
         valorScore.text = score.ToString();
-        
         
     }
 

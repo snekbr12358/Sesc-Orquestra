@@ -43,6 +43,7 @@ public class Gerenciador : MonoBehaviour
         TelaVitoria.SetActive(true);
         score.MostrarScoreWin();
         Debug.Log(banco.InformarValorBanco());
+        banco.GuardarDinheiro(score.scorepoints);
     }
 
     // Update is called once per frame
@@ -62,7 +63,7 @@ public class Gerenciador : MonoBehaviour
     }
     public void Restart()
     {
-
+        banco.GuardarDinheiro(score.scorepoints);
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
@@ -111,11 +112,12 @@ public class Gerenciador : MonoBehaviour
         txtvida.text = vida.ToString();
         score.ResetarScore();
         Play();
+        
     }
     public void Inicializar()
     {
         int vidas_compradas = PlayerPrefs.GetInt("nivelVida");
-        vida = vida + vidas_compradas;
+        vida = vidaInicial + vidas_compradas;
         txtvida.text = vida.ToString();
     }
     public int InformaVida()

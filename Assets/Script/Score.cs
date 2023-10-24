@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
     public TMP_Text TXTscoreGameOver;
 
     public TMP_Text TXTscoreWin;
-
+    
     public void ResetarScore() {
         scorepoints = 0;
         meutext.text = scorepoints.ToString("0");
@@ -20,17 +20,18 @@ public class Score : MonoBehaviour
     public void PontosUpadate(int pontos)
     {
         scorepoints += pontos;
-        meutext.text = scorepoints.ToString("0");  
+        meutext.text = scorepoints.ToString("0"); 
+        
     }
 
     public void MostrarScoreGameOver() 
     { 
-        TXTscoreGameOver.text = scorepoints.ToString("Pontos Totais:0");
+        TXTscoreGameOver.text = scorepoints.ToString(":0");
     }
 
     public void MostrarScoreWin()
     {
-        TXTscoreWin.text = scorepoints.ToString("Pontos Totais:0");
+        TXTscoreWin.text = scorepoints.ToString(":0");
     }
 
 }

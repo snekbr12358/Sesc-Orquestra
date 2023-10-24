@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    public AudioSource audioSource;
     bool clicado = false;
     Gerenciador gj;
 
@@ -34,9 +35,11 @@ public class Pause : MonoBehaviour
         }
         else
         {
+            audioSource.Stop();
             pauseMenu.gameObject.SetActive(true);
             Time.timeScale = 0;
             GameLigado = false;
+            
         }
     }
    
