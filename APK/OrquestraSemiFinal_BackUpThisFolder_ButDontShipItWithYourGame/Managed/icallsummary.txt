@@ -343,6 +343,7 @@ UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
 UnityEngine.GameObject::FindGameObjectWithTag
+UnityEngine.GameObject::FindGameObjectsWithTag
 UnityEngine.GameObject::get_transform
 UnityEngine.Gizmos::DrawWireCube_Injected
 UnityEngine.Gizmos::set_color_Injected

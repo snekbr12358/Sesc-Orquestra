@@ -25,6 +25,7 @@ public class Gerenciador : MonoBehaviour
 
     public GameObject GamerOver;
     public GameObject TelaVitoria;
+    public GameObject GameMenu;
 
     private int pontostotais;
 
@@ -105,6 +106,49 @@ public class Gerenciador : MonoBehaviour
 
     public void TentarNovamente()
     {
+
+        GamerOver.SetActive(false);
+        TelaVitoria.SetActive(false);
+        tocarmusica();
+        vida = vidaInicial;
+        txtvida.text = vida.ToString();
+        score.ResetarScore();
+        deletarTiles();
+        Play();
+
+    }
+    public void Inicializar()
+    {
+        int vidas_compradas = PlayerPrefs.GetInt("nivelVida");
+        vida = vidaInicial + vidas_compradas;
+        txtvida.text = vida.ToString();
+        
+    }
+    public int InformaVida()
+    {
+        return vida;
+    }
+
+    void deletarTiles()
+    {
+        GameObject[] verdes = GameObject.FindGameObjectsWithTag("verde");
+        
+        for (int i = 0; i < verdes.Length; i++)
+        {
+            Destroy(verdes[i]);
+        }
+
+        //GameObject.FindGameObjectsWithTag("verde");
+        GameObject[] vermelhas = GameObject.FindGameObjectsWithTag("vermelha");
+
+        for (int i = 0; i < vermelhas.Length; i++)
+        {
+            Destroy(vermelhas[i]);
+        }
+
+    }
+    public void Resume()
+    {
         GamerOver.SetActive(false);
         TelaVitoria.SetActive(false);
         tocarmusica();
@@ -112,16 +156,6 @@ public class Gerenciador : MonoBehaviour
         txtvida.text = vida.ToString();
         score.ResetarScore();
         Play();
-        
     }
-    public void Inicializar()
-    {
-        int vidas_compradas = PlayerPrefs.GetInt("nivelVida");
-        vida = vidaInicial + vidas_compradas;
-        txtvida.text = vida.ToString();
-    }
-    public int InformaVida()
-    {
-        return vida;
-    }
+
 }

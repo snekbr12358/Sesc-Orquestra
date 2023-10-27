@@ -15,17 +15,22 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         gj = FindAnyObjectByType<Gerenciador>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+       
            
     }
     void OnMouseDown()
     {
+    }
+    public void pausargame()
+    {
+
         if (gj != null && !clicado)
         {
             clicado = true;

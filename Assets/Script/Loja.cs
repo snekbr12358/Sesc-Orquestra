@@ -37,7 +37,8 @@ public class Loja : MonoBehaviour
     {
         int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;
         int custo = (vidascompradas * 10);
-        if(MeuBanco.Pagar(custo) == true) 
+        if(vidascompradas <= 7)
+        if(MeuBanco.Pagar(custo) == true ) 
         {
             //conseguiu compra
             PlayerPrefs.SetInt("nivelVida", vidascompradas);
@@ -51,7 +52,7 @@ public class Loja : MonoBehaviour
     {
         int score = PlayerPrefs.GetInt("minhasMoedas");
         valorScore.text = score.ToString();
-        
+        PlayerPrefs.SetInt("minhasMoedas", 0);
     }
 
 
