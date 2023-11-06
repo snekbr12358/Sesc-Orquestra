@@ -52,7 +52,7 @@ public class Loja : MonoBehaviour
     {
         int score = PlayerPrefs.GetInt("minhasMoedas");
         valorScore.text = score.ToString();
-        PlayerPrefs.SetInt("minhasMoedas", 0);
+        
     }
 
 
