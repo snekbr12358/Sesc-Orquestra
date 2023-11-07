@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class PartituraButton : Button
 {
     TextMeshProUGUI txtDescricaoLoja;
+    public Loja loja;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,8 @@ public class PartituraButton : Button
     public void ColocarNaFrente() 
     {
         transform.SetAsLastSibling();
+        
     }
+
 
 }

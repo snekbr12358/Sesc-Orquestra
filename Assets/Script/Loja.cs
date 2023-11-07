@@ -17,6 +17,10 @@ public class Loja : MonoBehaviour
 
     private Banco MeuBanco;
 
+    public GameObject comprar;
+    public GameObject equipar;
+    public GameObject preco;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +57,10 @@ public class Loja : MonoBehaviour
         int score = PlayerPrefs.GetInt("minhasMoedas");
         valorScore.text = score.ToString();
         
+    }
+    public void MostraItens()
+    {
+        comprar.SetActive(true);
     }
 
 
