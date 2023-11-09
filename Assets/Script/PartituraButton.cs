@@ -38,7 +38,7 @@ public class PartituraButton : Button
     public void ColocarNaFrente() 
     {
         transform.SetAsLastSibling();
-        
+        loja.MostraItens();
     }
 
 

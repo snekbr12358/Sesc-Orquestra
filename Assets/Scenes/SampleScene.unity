@@ -7980,8 +7980,8 @@ MonoBehaviour:
   valorScore: {fileID: 523342713}
   valorVida: {fileID: 1006572848}
   comprar: {fileID: 1795225517}
-  equipar: {fileID: 0}
-  preco: {fileID: 0}
+  equipar: {fileID: 1495830930}
+  preco: {fileID: 86288163}
 --- !u!1 &1940488256
 GameObject:
   m_ObjectHideFlags: 0
