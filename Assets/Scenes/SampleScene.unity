@@ -3095,7 +3095,7 @@ GameObject:
   - component: {fileID: 930391262}
   - component: {fileID: 930391261}
   m_Layer: 5
-  m_Name: 'Comprar(TMP) '
+  m_Name: 'ComprarD(TMP) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5732,7 +5732,7 @@ GameObject:
   - component: {fileID: 1353908316}
   - component: {fileID: 1353908315}
   m_Layer: 5
-  m_Name: 'ComprarButton '
+  m_Name: ComprarButtonD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5756,8 +5756,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0314078, y: 0.16900001}
   m_AnchorMax: {x: 0.9710001, y: 0.29653165}
-  m_AnchoredPosition: {x: 50.4, y: -152.1}
-  m_SizeDelta: {x: 118.517166, y: 21.309452}
+  m_AnchoredPosition: {x: 50.40001, y: -152.09999}
+  m_SizeDelta: {x: 118.517166, y: 21.309454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353908315
 MonoBehaviour:
@@ -6441,7 +6441,7 @@ GameObject:
   - component: {fileID: 1512949567}
   - component: {fileID: 1512949566}
   m_Layer: 5
-  m_Name: 'EquiparButton '
+  m_Name: EquiparButtonD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8665,6 +8665,9 @@ MonoBehaviour:
   comprar: {fileID: 1795225517}
   equipar: {fileID: 1495830930}
   preco: {fileID: 86288163}
+  comprarD: {fileID: 1353908313}
+  equiparD: {fileID: 1512949564}
+  precoD: {fileID: 930391259}
 --- !u!1 &1940488256
 GameObject:
   m_ObjectHideFlags: 0
