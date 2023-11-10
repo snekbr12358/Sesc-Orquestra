@@ -61,6 +61,8 @@ public class Loja : MonoBehaviour
     public void MostraItens()
     {
         comprar.SetActive(true);
+        equipar.SetActive(true);
+        preco.SetActive(true);
     }
 
 

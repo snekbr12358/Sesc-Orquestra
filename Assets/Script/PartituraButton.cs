@@ -15,7 +15,7 @@ public class PartituraButton : Button
     // Start is called before the first frame update
     void Start()
     {
-        
+        loja = FindObjectOfType<Loja>();
     }
 
     // Update is called once per frame

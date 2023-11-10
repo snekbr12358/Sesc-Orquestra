@@ -8,6 +8,7 @@ TagManager:
   - inimigo
   - vermelha
   - verde
+  - loja
   layers:
   - Default
   - TransparentFX
