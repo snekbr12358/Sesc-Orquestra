@@ -10,11 +10,13 @@ using UnityEngine.UI;
 public class PartituraButton : Button
 {
     TextMeshProUGUI txtDescricaoLoja;
+    Partitura partitura;
     public Loja loja;
 
     // Start is called before the first frame update
     void Start()
     {
+        partitura = GetComponent<Partitura>();
         loja = FindObjectOfType<Loja>();
     }
 

@@ -21,6 +21,10 @@ public class Loja : MonoBehaviour
     public GameObject equipar;
     public GameObject preco;
 
+    public GameObject comprarD;
+    public GameObject equiparD;
+    public GameObject precoD;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +67,9 @@ public class Loja : MonoBehaviour
         comprar.SetActive(true);
         equipar.SetActive(true);
         preco.SetActive(true);
+        comprarD.SetActive(true);
+        equiparD.SetActive(true);
+        precoD.SetActive(true);
     }
 
 
