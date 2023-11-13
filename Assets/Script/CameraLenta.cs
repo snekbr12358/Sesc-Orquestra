@@ -10,10 +10,12 @@ public class CameraLenta : MonoBehaviour
 
     public float tempoDeCooldown = 0.5f;
 
+    public float duracaoCâmeraLenta = 0.5f;
+
     public Button botaoCâmeraLenta;
     
     private bool botaoPressionado = false;
-    
+    private bool câmeraLentaAtivada = false;
     private bool emCooldown = false;
 
     // Verificações por frame
@@ -21,22 +23,31 @@ public class CameraLenta : MonoBehaviour
     {       
         botaoCâmeraLenta.onClick.AddListener(ToggleCâmeraLenta);
     }
+    void BotaoPressionado()
+    {
+        botaoPressionado = true;
+    }
+
+    void BotaoLiberado()
+    {
+        botaoPressionado = false;
+    }
+
     void ToggleCâmeraLenta()
-    {       
-        if (!emCooldown)
-        { 
-            
-          if (Time.timeScale == 1.0f)
-          {
+    {
+        if (botaoPressionado && !emCooldown)
+        {
             Time.timeScale = fatorDeEscalaDeTempo;
-                
+
+            Invoke("ResetarCâmera", duracaoCâmeraLenta);
+
             emCooldown = true;
-            Invoke("ResetarCooldown", tempoDeCooldown);              
-          }
-          else
-          {               
-            Time.timeScale = 1.0f;
-          }
+            Invoke("ResetarCooldown", tempoDeCooldown);
+            
+            câmeraLentaAtivada = !câmeraLentaAtivada;
+
+            
+            Time.timeScale = câmeraLentaAtivada ? fatorDeEscalaDeTempo : 1.0f;
         }
     }
     void ResetarCâmera()
@@ -49,9 +60,11 @@ public class CameraLenta : MonoBehaviour
     }
     void Update()
     {
-        if (botaoCâmeraLenta.IsPressed() && !emCooldown)
-        {
-            ToggleCâmeraLenta();
-        }
+
     }
+
+    public void FicaLento() { 
+        Time.timeScale = 0.8f;
+    }
+
 }
