@@ -16,8 +16,6 @@ public class SpawneRaction : MonoBehaviour
     void Update()
     {
         QuedaRandomizada();
-
-
     }
     private void OnDrawGizmos()
     {
@@ -56,63 +54,47 @@ public class SpawneRaction : MonoBehaviour
             int probabilidade = Random.Range(0, 106);
             if (probabilidade < 12)
             {
-                GameObject novaNota = Instantiate(Notas[0], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[0], novaPos, Quaternion.identity);            
             }else if (probabilidade < 24)
             {
-                GameObject novaNota = Instantiate(Notas[1], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[1], novaPos, Quaternion.identity);              
             }
             else if (probabilidade < 36)
             {
-                GameObject novaNota = Instantiate(Notas[2], novaPos, Quaternion.identity);
-               
+                GameObject novaNota = Instantiate(Notas[2], novaPos, Quaternion.identity);             
             }
             else if (probabilidade < 48)
             {
-                GameObject novaNota = Instantiate(Notas[3], novaPos, Quaternion.identity);
-               
+                GameObject novaNota = Instantiate(Notas[3], novaPos, Quaternion.identity);              
             }
             else if (probabilidade < 55)
             {
-                GameObject novaNota = Instantiate(Notas[4], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[4], novaPos, Quaternion.identity);                
             }
             else if (probabilidade < 75)
             {
-                GameObject novaNota = Instantiate(Notas[5], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[5], novaPos, Quaternion.identity);                
             }
             else if (probabilidade < 85)
             {
-                GameObject novaNota = Instantiate(Notas[6], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[6], novaPos, Quaternion.identity);               
             }
             else if (probabilidade < 90)
             {
-                GameObject novaNota = Instantiate(Notas[7], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[7], novaPos, Quaternion.identity);               
             }
             else if(probabilidade < 95)
             {
-                GameObject novaNota = Instantiate(Notas[8], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[8], novaPos, Quaternion.identity);              
             }
             else if (probabilidade < 100)
             {
-                GameObject novaNota = Instantiate(Notas[9], novaPos, Quaternion.identity);
-                
+                GameObject novaNota = Instantiate(Notas[9], novaPos, Quaternion.identity);                
             }
             else if (probabilidade < 105)
             {
-                GameObject novaNota = Instantiate(Notas[10], novaPos, Quaternion.identity);
-                
-            }
-            
-
-
-
-
+                GameObject novaNota = Instantiate(Notas[10], novaPos, Quaternion.identity);                
+            }         
         }
     }
 }

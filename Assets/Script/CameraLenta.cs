@@ -6,51 +6,52 @@ using UnityEngine.UI;
 
 public class CameraLenta : MonoBehaviour
 {
-    public float tempoDeCooldown = 5f;
     public float fatorDeEscalaDeTempo = 0.5f;
 
-    public Button botaoCâmeraLenta;
+    public float tempoDeCooldown = 0.5f;
 
-    private bool emCooldown = false;
+    public Button botaoCâmeraLenta;
+    
     private bool botaoPressionado = false;
+    
+    private bool emCooldown = false;
+
+    // Verificações por frame
     void Start()
-    {
-        
-        botaoCâmeraLenta.onClick.AddListener(AtivarCâmeraLenta);
-        botaoCâmeraLenta.onPointerUp.AddListener(DesativarCâmeraLenta);
+    {       
+        botaoCâmeraLenta.onClick.AddListener(ToggleCâmeraLenta);
+    }
+    void ToggleCâmeraLenta()
+    {       
+        if (!emCooldown)
+        { 
+            
+          if (Time.timeScale == 1.0f)
+          {
+            Time.timeScale = fatorDeEscalaDeTempo;
+                
+            emCooldown = true;
+            Invoke("ResetarCooldown", tempoDeCooldown);              
+          }
+          else
+          {               
+            Time.timeScale = 1.0f;
+          }
+        }
+    }
+    void ResetarCâmera()
+    {      
+      Time.timeScale = 1.0f;
+    }
+    void ResetarCooldown()
+    {        
+      emCooldown = false;
     }
     void Update()
     {
-             
-    }
-    void AtivarCâmeraLenta()
-    {
-        Time.timeScale = fatorDeEscalaDeTempo;
-        if (!emCooldown)
+        if (botaoCâmeraLenta.IsPressed() && !emCooldown)
         {
-            // Altera a escala de tempo para criar o efeito de câmera lenta
-            Time.timeScale = fatorDeEscalaDeTempo;
-
-            // Inicia o cooldown
-            emCooldown = true;
-
-            // Agendamos o término do cooldown
-            Invoke("ResetarCâmera", tempoDeCooldown);
+            ToggleCâmeraLenta();
         }
     }
-    void DesativarCâmeraLenta()
-    {
-        // Quando o botão é solto, restaura imediatamente a escala de tempo
-        Time.timeScale = 1.0f;
-    }
-
-    void ResetarCâmera()
-    {
-        // Restaura a escala de tempo
-        Time.timeScale = 1.0f;
-
-        // Reinicia o cooldown
-        emCooldown = false;
-    }
 }
-

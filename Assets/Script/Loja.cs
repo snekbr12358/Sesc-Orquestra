@@ -37,7 +37,7 @@ public class Loja : MonoBehaviour
         //informaçao do nivel da vida
         int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;        
         int custo = (vidascompradas * 10);
-        valorVida.text = " Vida LV: " + vidascompradas.ToString() + "$: " + custo.ToString();
+        valorVida.text = "VIDA LV: " + vidascompradas.ToString() + "$: " + custo.ToString();
         ScoreLoja();
     }
     //Realizar Comprar

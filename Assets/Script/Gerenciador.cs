@@ -32,8 +32,7 @@ public class Gerenciador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        banco = GetComponent<Banco>();
-        
+        banco = GetComponent<Banco>();     
         Pause();
     }
 
@@ -54,19 +53,19 @@ public class Gerenciador : MonoBehaviour
     }
     public void Play()
     {
-        Inicializar();
-        Time.timeScale = 1f;
-        Invoke("MusicaFim", audioSource.clip.length);
+       Inicializar();
+       Time.timeScale = 1f;
+       Invoke("MusicaFim", audioSource.clip.length);
     }
     public void Pause()
     {
-        Time.timeScale = 0f;
+       Time.timeScale = 0f;
     }
     public void Restart()
     {
-        banco.GuardarDinheiro(score.scorepoints);
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+       banco.GuardarDinheiro(score.scorepoints);
+       Time.timeScale = 1f;
+       SceneManager.LoadScene(0);
     }
     
     public void SairJogo()
@@ -103,10 +102,8 @@ public class Gerenciador : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-
     public void TentarNovamente()
     {
-
         GamerOver.SetActive(false);
         TelaVitoria.SetActive(false);
         tocarmusica();
@@ -115,7 +112,6 @@ public class Gerenciador : MonoBehaviour
         score.ResetarScore();
         deletarTiles();
         Play();
-
     }
     public void Inicializar()
     {

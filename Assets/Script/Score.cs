@@ -15,12 +15,12 @@ public class Score : MonoBehaviour
     
     public void ResetarScore() {
         scorepoints = 0;
-        meutext.text = scorepoints.ToString("0");
+        meutext.text = scorepoints.ToString(":0");
     }
     public void PontosUpadate(int pontos)
     {
         scorepoints += pontos;
-        meutext.text = scorepoints.ToString("0"); 
+        meutext.text = scorepoints.ToString(":0"); 
         
     }
 
