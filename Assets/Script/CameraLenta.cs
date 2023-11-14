@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class CameraLenta : MonoBehaviour
 {
-
     [SerializeField] float duracao;
     [SerializeField] float tempoCooldown;
 
@@ -62,6 +61,6 @@ public class CameraLenta : MonoBehaviour
         if(!cooldown)
             ativar = true;
     }
-
+   
 
 }

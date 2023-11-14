@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Loja : MonoBehaviour
 {
+    //Variavel Texto de Valor de Score
 
     public TextMeshProUGUI valorScore;
 
@@ -24,6 +25,8 @@ public class Loja : MonoBehaviour
     public GameObject comprarD;
     public GameObject equiparD;
     public GameObject precoD;
+
+    public CameraLenta cameraLenta;
 
     // Start is called before the first frame update
     void Start()
@@ -71,7 +74,6 @@ public class Loja : MonoBehaviour
         equiparD.SetActive(true);
         precoD.SetActive(true);
     }
-
-
+   
 
 }
