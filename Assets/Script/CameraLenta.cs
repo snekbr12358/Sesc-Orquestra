@@ -6,65 +6,62 @@ using UnityEngine.UI;
 
 public class CameraLenta : MonoBehaviour
 {
-    public float fatorDeEscalaDeTempo = 0.5f;
 
-    public float tempoDeCooldown = 0.5f;
+    [SerializeField] float duracao;
+    [SerializeField] float tempoCooldown;
 
-    public float duracaoCâmeraLenta = 0.5f;
+    [SerializeField] bool ativar = false;
+    [SerializeField] bool cooldown = false;
 
-    public Button botaoCâmeraLenta;
-    
-    private bool botaoPressionado = false;
-    private bool câmeraLentaAtivada = false;
-    private bool emCooldown = false;
+    float duracaoTimer;
+    float cooldownTimer;
 
     // Verificações por frame
     void Start()
     {       
-        botaoCâmeraLenta.onClick.AddListener(ToggleCâmeraLenta);
-    }
-    void BotaoPressionado()
-    {
-        botaoPressionado = true;
+
     }
 
-    void BotaoLiberado()
-    {
-        botaoPressionado = false;
-    }
-
-    void ToggleCâmeraLenta()
-    {
-        if (botaoPressionado && !emCooldown)
-        {
-            Time.timeScale = fatorDeEscalaDeTempo;
-
-            Invoke("ResetarCâmera", duracaoCâmeraLenta);
-
-            emCooldown = true;
-            Invoke("ResetarCooldown", tempoDeCooldown);
-            
-            câmeraLentaAtivada = !câmeraLentaAtivada;
-
-            
-            Time.timeScale = câmeraLentaAtivada ? fatorDeEscalaDeTempo : 1.0f;
-        }
-    }
-    void ResetarCâmera()
-    {      
-      Time.timeScale = 1.0f;
-    }
-    void ResetarCooldown()
-    {        
-      emCooldown = false;
-    }
     void Update()
     {
-
+        if (ativar && !cooldown) 
+        {
+            duracaoTimer += Time.deltaTime;
+            FicaLento();
+            if (duracaoTimer >= duracao) 
+            {
+                duracaoTimer = 0;
+                cooldown = true;
+                ativar = false;
+                FicaNormal();
+            }
+        }
+        if (cooldown) 
+        { 
+            cooldownTimer += Time.deltaTime;
+            if (cooldownTimer >= tempoCooldown) 
+            {
+                cooldownTimer = 0;
+                cooldown = false;
+            }
+        }
     }
 
-    public void FicaLento() { 
-        Time.timeScale = 0.8f;
+    void FicaLento() 
+    { 
+        Time.timeScale = 0.5f;
     }
+
+    void FicaNormal() 
+    {
+        Time.timeScale = 1f;
+    }
+
+    public void AtivarCameraLenta() 
+    {
+        if(!cooldown)
+            ativar = true;
+    }
+
 
 }
