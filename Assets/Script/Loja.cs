@@ -34,7 +34,6 @@ public class Loja : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        PlayerPrefs.SetInt(TagsPlayerprefs.tagupgradeslowmotion, 0);
         MeuBanco = GameObject.FindGameObjectWithTag("GameController").GetComponent<Banco>();
     }
 
