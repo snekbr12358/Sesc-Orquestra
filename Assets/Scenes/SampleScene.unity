@@ -1610,7 +1610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &424958070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3119,7 +3119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.287, y: 0.642}
   m_AnchorMax: {x: 0.94021946, y: 0.69000006}
-  m_AnchoredPosition: {x: 0.30000305, y: -0.29999924}
+  m_AnchoredPosition: {x: 0.30000305, y: -0.30000305}
   m_SizeDelta: {x: 0.8538971, y: 1.8675003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917395047
@@ -6516,7 +6516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.102000006, y: 0.642}
   m_AnchorMax: {x: 0.2695612, y: 0.69000006}
-  m_AnchoredPosition: {x: 0.5, y: 0.20000076}
+  m_AnchoredPosition: {x: 0.5, y: 0.19999695}
   m_SizeDelta: {x: 1, y: 1.1697998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440575537
@@ -6562,7 +6562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1440575538}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1752233419}
+        m_TargetAssemblyTypeName: Loja, Assembly-CSharp
+        m_MethodName: ComprarSlowMotion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1440575538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8637,6 +8649,7 @@ GameObject:
   - component: {fileID: 1752233416}
   - component: {fileID: 1752233417}
   - component: {fileID: 1752233418}
+  - component: {fileID: 1752233419}
   m_Layer: 0
   m_Name: GerenciadorDeJogor
   m_TagString: GameController
@@ -8722,6 +8735,28 @@ MonoBehaviour:
   tempoCooldown: 1
   ativar: 0
   cooldown: 0
+--- !u!114 &1752233419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752233413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bbde3f649849a4a98d4f07da1a40eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valorScore: {fileID: 523342713}
+  valorVida: {fileID: 1006572848}
+  valorSlow: {fileID: 917395047}
+  comprar: {fileID: 1795225517}
+  equipar: {fileID: 1495830930}
+  preco: {fileID: 86288163}
+  comprarD: {fileID: 1353908313}
+  equiparD: {fileID: 1512949564}
+  precoD: {fileID: 930391259}
+  cameraLenta: {fileID: 0}
 --- !u!1 &1765295709
 GameObject:
   m_ObjectHideFlags: 0
@@ -9073,7 +9108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1850378641
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9200,19 +9235,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850378640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1bbde3f649849a4a98d4f07da1a40eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   valorScore: {fileID: 523342713}
   valorVida: {fileID: 1006572848}
+  valorSlow: {fileID: 0}
   comprar: {fileID: 1795225517}
   equipar: {fileID: 1495830930}
   preco: {fileID: 86288163}
   comprarD: {fileID: 1353908313}
   equiparD: {fileID: 1512949564}
   precoD: {fileID: 930391259}
+  cameraLenta: {fileID: 0}
 --- !u!1 &1940488256
 GameObject:
   m_ObjectHideFlags: 0

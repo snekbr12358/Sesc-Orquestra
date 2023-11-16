@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Loja : MonoBehaviour
 {
+
     //Variavel Texto de Valor de Score
 
     public TextMeshProUGUI valorScore;
@@ -13,6 +14,8 @@ public class Loja : MonoBehaviour
     //Variavel Texto de Valor de Coração
 
     public TextMeshProUGUI valorVida;
+
+    public TextMeshProUGUI valorSlow;
 
     //Informação do Banco
 
@@ -30,38 +33,58 @@ public class Loja : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-      MeuBanco = GameObject.FindGameObjectWithTag("GameController").GetComponent<Banco>();
+    {   
+        PlayerPrefs.SetInt(TagsPlayerprefs.tagupgradeslowmotion, 0);
+        MeuBanco = GameObject.FindGameObjectWithTag("GameController").GetComponent<Banco>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //informaçao do nivel da vida
-        int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;        
-        int custo = (vidascompradas * 10);
-        valorVida.text = "VIDA LV: " + vidascompradas.ToString() + "$: " + custo.ToString();
+        int vidascompradas = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradevida) + 1;        
+        int custovida = (vidascompradas * 10);
+        valorVida.text = "VIDA LV: " + vidascompradas.ToString() + "$: " + custovida.ToString();
+
+        int upgradeslowmotion = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradeslowmotion) + 1;
+        int custoslow = (upgradeslowmotion * 10);
+        valorSlow.text = "SLOWMOTION LV: " + upgradeslowmotion.ToString() + "$: " + custoslow.ToString();
+
         ScoreLoja();
     }
     //Realizar Comprar
     public void ComprarVida()
     {
-        int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;
+        int vidascompradas = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradevida) + 1;
         int custo = (vidascompradas * 10);
         if(vidascompradas <= 7)
         if(MeuBanco.Pagar(custo) == true ) 
         {
             //conseguiu compra
-            PlayerPrefs.SetInt("nivelVida", vidascompradas);
+            PlayerPrefs.SetInt(TagsPlayerprefs.tagupgradevida, vidascompradas);
         }
         else
         {
             //não conseguiu comprar
         }
     }
+
+    public void ComprarSlowMotion() 
+    {
+        int upgradeslowmotion = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradeslowmotion) + 1;
+        int custo = (upgradeslowmotion * 10);
+        if (upgradeslowmotion <= 3) 
+        {
+            if (MeuBanco.Pagar(custo) == true) 
+            {
+                PlayerPrefs.SetInt(TagsPlayerprefs.tagupgradeslowmotion, upgradeslowmotion);
+            }
+        }
+    }
+
     public void ScoreLoja()
     {
-        int score = PlayerPrefs.GetInt("minhasMoedas");
+        int score = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgrademoeda);
         valorScore.text = score.ToString();
         
     }

@@ -12,6 +12,7 @@ public class CameraLenta : MonoBehaviour
     [SerializeField] bool ativar = false;
     [SerializeField] bool cooldown = false;
 
+    float upgradeCooldown = 0;
     float duracaoTimer;
     float cooldownTimer;
 
@@ -38,7 +39,7 @@ public class CameraLenta : MonoBehaviour
         if (cooldown) 
         { 
             cooldownTimer += Time.deltaTime;
-            if (cooldownTimer >= tempoCooldown) 
+            if (cooldownTimer >= tempoCooldown + upgradeCooldown) 
             {
                 cooldownTimer = 0;
                 cooldown = false;
@@ -58,8 +59,11 @@ public class CameraLenta : MonoBehaviour
 
     public void AtivarCameraLenta() 
     {
-        if(!cooldown)
+        if (!cooldown) 
+        {
+            upgradeCooldown = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradeslowmotion);
             ativar = true;
+        }
     }
    
 
