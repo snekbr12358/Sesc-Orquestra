@@ -57,7 +57,7 @@ public class Loja : MonoBehaviour
         int vidascompradas = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradevida) + 1;
         int custo = (vidascompradas * 10);
         if(vidascompradas <= 7)
-        if(MeuBanco.Pagar(custo) == true ) 
+        if(MeuBanco.Pagar(custo) == true) 
         {
             //conseguiu compra
             PlayerPrefs.SetInt(TagsPlayerprefs.tagupgradevida, vidascompradas);
