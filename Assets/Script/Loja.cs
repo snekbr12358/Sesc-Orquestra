@@ -44,11 +44,12 @@ public class Loja : MonoBehaviour
         int vidascompradas = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradevida) + 1;        
         int custovida = (vidascompradas * 10);
         valorVida.text = "VIDA LV: " + vidascompradas.ToString() + "$: " + custovida.ToString();
+        
 
         int upgradeslowmotion = PlayerPrefs.GetInt(TagsPlayerprefs.tagupgradeslowmotion) + 1;
         int custoslow = (upgradeslowmotion * 10);
         valorSlow.text = "SLOWMOTION LV: " + upgradeslowmotion.ToString() + "$: " + custoslow.ToString();
-
+        
         ScoreLoja();
     }
     //Realizar Comprar
